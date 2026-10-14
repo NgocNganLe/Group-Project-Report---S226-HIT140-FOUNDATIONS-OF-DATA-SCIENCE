@@ -88,5 +88,4 @@ if len(missing):
 
 out.to_csv(OUT_FILE, index=False, encoding="utf-8")
 print(f"\nSaved {len(out)} teams to {OUT_FILE}")
-print("Read the 'matched_address' column: each address should be in the right city/state/country.")
-print("Source to cite: OpenStreetMap contributors, via the Nominatim geocoding service.")
+
