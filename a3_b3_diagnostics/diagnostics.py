@@ -16,10 +16,10 @@ from statsmodels.stats.diagnostic import het_breuschpagan, linear_reset
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 OUT_DIR = "outputs"
-SKEW_LIMIT = 1.0     # |skewness| above this: candidate for a transformation
+SKEW_LIMIT = 1.0     
 VIF_LIMIT = 5.0
 CORR_LIMIT = 0.8
-COOK_LIMIT = 1.0     # Cook's distance above this: refit without the row
+COOK_LIMIT = 1.0     
 
 MODELS = [
     dict(
