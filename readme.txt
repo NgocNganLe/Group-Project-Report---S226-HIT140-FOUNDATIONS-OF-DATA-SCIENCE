@@ -1,5 +1,5 @@
 Member 3: A3 (travel distance), B3 (rolling goals) and regression diagnostics
-HIT140 / PRT551 Assessment 3
+
 
 Scripts
   make_venues.py          looks up stadium coordinates on OpenStreetMap -> data/venues.csv
