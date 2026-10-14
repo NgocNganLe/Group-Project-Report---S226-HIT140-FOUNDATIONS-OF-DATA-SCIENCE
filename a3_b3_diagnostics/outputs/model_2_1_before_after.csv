@@ -1,0 +1,4 @@
+version,cv_RMSE,cv_MAE,R2,adj_R2
+Raw predictors,2.317,1.479,0.449,0.403
+"Yeo-Johnson on RestDaysGap, Stage_Pressure_Diff",5.805,2.269,0.457,0.411
+Mean-only baseline,2.0,,0.0,0.0

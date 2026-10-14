@@ -1,0 +1,9 @@
+predictor,VIF,flag
+fifa_points_diff,5.16,CHECK
+RestDaysGap,1.04,ok
+FormLast5Gap,3.03,ok
+h2h_goal_diff_hist,1.29,ok
+manager_wc_exp_diff,1.29,ok
+travel_distance_diff_km,1.11,ok
+Previous_WC_Experience_Share_Gap,2.75,ok
+Stage_Pressure_Diff,1.36,ok

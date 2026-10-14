@@ -1,0 +1,9 @@
+,std_coef,p_value
+S1_FIFA_Points_Gap,0.4954,0.0001
+B1_Att_Strength_Adj,0.198,0.0037
+B4_Host_Nation_Home,0.1167,0.0613
+B3_WC_Rolling_Goals,-0.0744,0.2834
+S2_RestDaysGap,-0.0309,0.6086
+S3_Previous_WC_Experience_Share_Gap,-0.0296,0.7424
+B2_Opp_Def_Strength_Adj,0.0005,0.9931
+S4_FormLast5Gap,0.0003,0.9978

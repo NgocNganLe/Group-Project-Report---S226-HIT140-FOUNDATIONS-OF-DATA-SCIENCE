@@ -1,0 +1,10 @@
+model,version,cv_RMSE,cv_MAE,R2,adj_R2
+model_2_1,Raw predictors,2.317,1.479,0.449,0.403
+model_2_1,"Yeo-Johnson on RestDaysGap, Stage_Pressure_Diff",5.805,2.269,0.457,0.411
+model_2_1,Mean-only baseline,2.0,,0.0,0.0
+model_2_1,Raw predictors (without match 13),1.671,1.286,0.475,0.431
+model_2_1,"Yeo-Johnson on RestDaysGap, Stage_Pressure_Diff (without match 13)",1.717,1.308,0.476,0.431
+model_2_1,Mean-only baseline (without match 13),2.033,,0.0,0.0
+model_2_2,Raw predictors,1.525,1.029,0.287,0.258
+model_2_2,Yeo-Johnson on B1_Att_Strength_Adj,1.52,1.03,0.284,0.256
+model_2_2,Mean-only baseline,1.383,,0.0,0.0

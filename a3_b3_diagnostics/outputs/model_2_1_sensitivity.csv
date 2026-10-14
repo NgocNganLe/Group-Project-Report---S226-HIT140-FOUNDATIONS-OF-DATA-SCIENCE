@@ -1,0 +1,4 @@
+version,cv_RMSE,cv_MAE,R2,adj_R2
+Raw predictors (without match 13),1.671,1.286,0.475,0.431
+"Yeo-Johnson on RestDaysGap, Stage_Pressure_Diff (without match 13)",1.717,1.308,0.476,0.431
+Mean-only baseline (without match 13),2.033,,0.0,0.0

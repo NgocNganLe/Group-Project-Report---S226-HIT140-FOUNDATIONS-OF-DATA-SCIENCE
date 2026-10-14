@@ -1,0 +1,10 @@
+,coef,SE_normal,SE_clustered,p_normal,p_clustered
+const,0.8713,0.2986,0.3148,0.0039,0.0056
+S1_FIFA_Points_Gap,0.0029,0.0007,0.0007,0.0001,0.0
+S2_RestDaysGap,-0.0061,0.012,0.0052,0.6086,0.2367
+S3_Previous_WC_Experience_Share_Gap,-0.116,0.3523,0.3278,0.7424,0.7236
+S4_FormLast5Gap,0.0004,0.1434,0.1343,0.9978,0.9977
+B1_Att_Strength_Adj,0.3241,0.1105,0.0901,0.0037,0.0003
+B2_Opp_Def_Strength_Adj,0.0021,0.2434,0.265,0.9931,0.9936
+B3_WC_Rolling_Goals,-0.0948,0.0882,0.0834,0.2834,0.2555
+B4_Host_Nation_Home,0.6702,0.356,0.3908,0.0613,0.0864

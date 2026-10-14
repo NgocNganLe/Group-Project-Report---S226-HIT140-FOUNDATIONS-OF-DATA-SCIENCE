@@ -1,0 +1,9 @@
+predictor,VIF,flag
+S1_FIFA_Points_Gap,4.53,ok
+S2_RestDaysGap,1.01,ok
+S3_Previous_WC_Experience_Share_Gap,2.26,ok
+S4_FormLast5Gap,2.73,ok
+B1_Att_Strength_Adj,1.27,ok
+B2_Opp_Def_Strength_Adj,1.08,ok
+B3_WC_Rolling_Goals,1.34,ok
+B4_Host_Nation_Home,1.07,ok

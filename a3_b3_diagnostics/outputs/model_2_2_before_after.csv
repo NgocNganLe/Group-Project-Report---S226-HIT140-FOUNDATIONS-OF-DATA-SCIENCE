@@ -1,0 +1,4 @@
+version,cv_RMSE,cv_MAE,R2,adj_R2
+Raw predictors,1.525,1.029,0.287,0.258
+Yeo-Johnson on B1_Att_Strength_Adj,1.52,1.03,0.284,0.256
+Mean-only baseline,1.383,,0.0,0.0
