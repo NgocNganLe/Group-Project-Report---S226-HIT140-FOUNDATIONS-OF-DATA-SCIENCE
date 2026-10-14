@@ -42,7 +42,7 @@ missing = [c for c in required if c not in df.columns]
 if missing:
     raise ValueError(f"{MATCH_FILE} is missing {missing}. Columns found: {df.columns.tolist()}")
 df["team_key"] = df["team"].map(team_key)
-print(f"Rows: {len(df)}  |  teams: {df['team_key'].nunique()}  (expected 208 and 48)")
+print(f"Rows: {len(df)}  |  teams: {df['team_key'].nunique()} ")
 
 # 2. Mean goals per match in qualification, for each team
 qual = pd.read_csv(QUAL_FILE, encoding="utf-8-sig")
@@ -67,7 +67,7 @@ no_qualifiers = sorted(world_cup_teams - set(qual_mean.index))
 unexpected = [t for t in no_qualifiers if t not in HOSTS]
 if unexpected:
     raise ValueError(f"No qualification matches found for {unexpected}; check the team spellings.")
-print("Teams without qualification matches (expected: the 3 hosts):", no_qualifiers)
+print("Teams without qualification matches :", no_qualifiers)
 
 host_value = qual_mean.mean()
 print(f"Value used for the hosts (mean of the other teams): {host_value:.3f}")
@@ -91,11 +91,11 @@ df.loc[is_host, "B3_source"] = "host_fallback"
 # 5. Checks
 print("\nSource of the B3 value:")
 print(df["B3_source"].value_counts().to_string())
-print("Missing B3 values:", int(df["B3_WC_Rolling_Goals"].isna().sum()), "(expected 0)")
+print("Missing B3 values:", int(df["B3_WC_Rolling_Goals"].isna().sum()),)
 
 dates = pd.to_datetime(df["match_date"], format="ISO8601")
 not_in_order = df.assign(date=dates).groupby("team_key")["date"].apply(lambda s: not s.is_monotonic_increasing)
-print("Teams whose matches are not in date order by match_id:", int(not_in_order.sum()), "(expected 0)")
+print("Teams whose matches are not in date order by match_id:", int(not_in_order.sum()),)
 
 print("\nSpain:")
 print(df.loc[df["team_key"] == "spain", ["match_id", "opponent", "goals_scored", "prior_wc_matches",
