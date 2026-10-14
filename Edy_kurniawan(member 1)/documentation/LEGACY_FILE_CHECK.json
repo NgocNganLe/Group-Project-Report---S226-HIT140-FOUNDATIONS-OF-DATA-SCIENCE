@@ -1,0 +1,15 @@
+{
+  "notebook_checked": "01_collect_fifa_match_data_REPAIRED_WORKING.ipynb",
+  "code_cells": 77,
+  "saved_error_outputs": 2,
+  "legacy_draft_fields_found": {
+    "log_market_value_ratio": true,
+    "squad_avg_age_diff": true,
+    "recent_win_rate_diff": true,
+    "2026-06-11": true
+  },
+  "notebook_executed": false,
+  "notebook_modified": false,
+  "old_github_zip_available": false,
+  "repository_compared_or_modified": false
+}
