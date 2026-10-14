@@ -74,5 +74,3 @@ if len(missing):
     print("\nCHECK - not found:", missing["venue"].tolist())
 out.to_csv(OUT_FILE, index=False, encoding="utf-8")
 print(f"\nSaved {len(out)} stadiums to {OUT_FILE}")
-print("Read the 'matched_address' column: each address should be the right stadium in the right city.")
-print("Source to cite: OpenStreetMap contributors, via the Nominatim geocoding service.")
