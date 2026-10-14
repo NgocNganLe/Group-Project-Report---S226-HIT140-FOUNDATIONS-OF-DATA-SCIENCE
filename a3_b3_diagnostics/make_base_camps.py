@@ -21,7 +21,7 @@ if os.path.exists(OUT_FILE):
         for _, o in old.iterrows():
             if pd.notna(o["lat"]) and pd.notna(o["lon"]):
                 done[o["team"]] = {c: o[c] for c in COLUMNS}
-print(f"Teams in FIFA's table: {len(table)}  |  already found in an earlier run: {len(done)}")
+print(f"Teams in FIFA's table: {len(table)}  |  already found  {len(done)}")
 
 
 if len(done) < len(table):
@@ -29,8 +29,7 @@ if len(done) < len(table):
     try:
         test = geolocator.geocode("Kansas City, United States")
     except Exception as e:
-        raise SystemExit(f"Cannot reach OpenStreetMap ({e}). Check your internet / VPN / university network "
-                         f"and run again.")
+        raise SystemExit(f"Cannot reach OpenStreetMap ({e})")
     print("Connection OK. Starting the lookups (about 3-5 minutes) ...\n", flush=True)
 
 rows = []
@@ -67,7 +66,7 @@ try:
         else:
             rows.append({"team": r.team, "fifa_city": r.fifa_city, "training_site": r.training_site,
                          "lat": None, "lon": None, "query_used": "", "matched_address": "NOT FOUND"})
-            print("      -> NOT FOUND (look it up on Google Maps and type lat/lon into the csv)", flush=True)
+            print("      -> NOT FOUND (look it up on Google Maps )", flush=True)
 
         
         pd.DataFrame(rows)[COLUMNS].to_csv(OUT_FILE, index=False, encoding="utf-8")
