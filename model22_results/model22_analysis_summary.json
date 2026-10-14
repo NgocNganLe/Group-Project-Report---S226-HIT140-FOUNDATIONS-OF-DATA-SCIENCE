@@ -1,0 +1,70 @@
+{
+  "input_file": "C:\\Users\\User\\Documents\\VSCODE_DEMO\\Data science\\model22_8_features_208_COMPLETE_HOST_MEDIAN.csv",
+  "data_validation": {
+    "rows": 208,
+    "matches": 104,
+    "predictors": [
+      "S1_FIFA_Points_Gap",
+      "S2_RestDaysGap",
+      "S3_Previous_WC_Experience_Share_Gap",
+      "S4_FormLast5Gap",
+      "B1_Att_Strength_Adj",
+      "B2_Opp_Def_Strength_Adj",
+      "B3_WC_Rolling_Goals",
+      "B4_Host_Nation_Home"
+    ],
+    "missing_analytic_values": 0
+  },
+  "split": {
+    "method": "GroupShuffleSplit by match_id",
+    "test_size": 0.2,
+    "random_state": 42,
+    "train_matches": 83,
+    "test_matches": 21,
+    "train_rows": 166,
+    "test_rows": 42
+  },
+  "training_ols": {
+    "R2": 0.3079008744021857,
+    "adjusted_R2": 0.2726346769194945,
+    "ordinary_F": 8.730764765702485,
+    "ordinary_F_p": 7.850851885892624e-10,
+    "clustered_F": 11.06967120258662,
+    "clustered_F_p": 1.8061627704005597e-10,
+    "cluster_count": 83
+  },
+  "holdout_model": {
+    "R2": -2.691723634962304,
+    "MAE": 1.4137074908600646,
+    "RMSE": 2.4430933477784804
+  },
+  "holdout_baseline": {
+    "R2": -0.18219504354463045,
+    "MAE": 1.1577739529546758,
+    "RMSE": 1.382515589827607
+  },
+  "cross_validation_mean": {
+    "R2": -0.4381710114722576,
+    "MAE": 1.0159165560170393,
+    "RMSE": 1.4917895010314925,
+    "baseline_R2": -0.02923431092301345,
+    "baseline_MAE": 1.1176305220883531,
+    "baseline_RMSE": 1.3902436251030317
+  },
+  "cross_validation_sd": {
+    "R2": 1.4516699629578675,
+    "MAE": 0.13374864796154531,
+    "RMSE": 0.5812238300683201
+  },
+  "training_diagnostics": {
+    "scope": "training rows only",
+    "max_VIF": 5.189540641364367,
+    "max_VIF_variable": "S1_FIFA_Points_Gap",
+    "Shapiro_W": 0.9637343555285508,
+    "Shapiro_p": 0.00025088196179784395,
+    "Breusch_Pagan_LM": 13.250101398252319,
+    "Breusch_Pagan_LM_p": 0.10352923511475733,
+    "Breusch_Pagan_F": 1.7023463997096664,
+    "Breusch_Pagan_F_p": 0.10172347544200323
+  }
+}
