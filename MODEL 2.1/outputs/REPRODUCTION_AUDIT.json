@@ -1,0 +1,48 @@
+{
+  "status": "REPORT_ALIGNED_WORKING_MODEL21_ONLY_NOT_FINAL_GROUP_DATASET",
+  "diagnostics": {
+    "N": 104,
+    "in_sample_R2": 0.4491926892257174,
+    "in_sample_adj_R2": 0.4028089156868304,
+    "Shapiro_p": 0.09517957104616198,
+    "Breusch_Pagan_p": 0.6752181920761947,
+    "RESET_p": 0.20536872898411498
+  },
+  "report_reproduction_checks": {
+    "raw_CV_RMSE_matches_report": true,
+    "raw_baseline_matches_report": true,
+    "reduced_CV_RMSE_matches_report": true,
+    "reduced_baseline_matches_report": true,
+    "fifa_HC3_p_matches_report": true,
+    "H2H_HC3_p_matches_report": true
+  },
+  "protocol": {
+    "sample": "104matches",
+    "folds": 5,
+    "repeats": 3,
+    "seed": 42,
+    "algorithm": "default_rng permutation of sorted unique match IDs",
+    "aggregation": "mean per-fold RMSE",
+    "HC3_inference": "normal/z"
+  },
+  "limits": [
+    "S3roster cutoff is provisional",
+    "Model22notrun",
+    "Collection notebook not rerun",
+    "Removing13changesvalidationpopulation andfolds",
+    "Fixed transformation variables; transform fitted within each trainingfold",
+    "Distance variants have small non-opening coordinate differences"
+  ],
+  "input_sha256": {
+    "data/model21_master.csv": "803a98cbdbcb5b3ddb614ede5330f8c6e235de74d43472b861bfa17bd55a3dbb",
+    "data/a3_with_master_ids.csv": "57af129f39d9271dca8c8fb2cbdddf4abf77a40cf163fc9a1347acdd65e1699e"
+  },
+  "environment": {
+    "python": "3.12.8",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.4",
+    "scikit-learn": "1.6.1"
+  }
+}

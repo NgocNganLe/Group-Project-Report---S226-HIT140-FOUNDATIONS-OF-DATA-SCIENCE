@@ -1,0 +1,8 @@
+component,finding,action
+Legacy collection notebook,"Historical data-dictionary draft still contains market-value, win-rate and squad-age variables",Preserve notebook as collection history; use updated modelling dictionary in this package
+Legacy collector dependencies,"Saved HTML, source-verification logs and timestamped checkpoints required",Do not claim the whole collection pipeline was rerun; do not Run All
+Latest report scope,Primary fit now all104matches; no primary72/32holdout in latestshortreport,Run new full-sample module; retain old72/32results only as separatelylabelled supplementary analysis
+Model21 metrics,"R2 is in-sample, notCVR2",New outputs use in_sample_R2/in_sample_adj_R2 columnnames
+Match13,Genuine RestDaysGap−70 remains in primarysnapshot,Case deletion is separate; compare against reduced-sample baseline; disclose changedpopulation/folds
+Reproducibility,Originaldiagnostics includes Model22data dependencies notprovided,Separate offlineModel21entrypoint withrelativepaths and2providedinputs
+Data readiness,S3cutoff remainsprovisional andModel22packages notfullyreconciled,"Retain working status; this is Model21updateonly, notfinal12featuregrouprepo"

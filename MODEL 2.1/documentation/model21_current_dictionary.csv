@@ -1,0 +1,10 @@
+variable,role,definition,status
+goal_difference,target,Team A goals minus Team B goals; current-match outcome is target only,WORKING_REPORT_ALIGNED; NOT FULL_SOURCE_CERTIFICATION
+fifa_points_diff,predictor,"Fixed working FIFA-points snapshot, Team A minus Team B; upstream ranking availability not recertified here",WORKING_REPORT_ALIGNED; NOT FULL_SOURCE_CERTIFICATION
+RestDaysGap,predictor,Calendar-day rest gap: opening latest eligible friendly; later previous World Cup match; Team A minus Team B,WORKING_REPORT_ALIGNED; NOT FULL_SOURCE_CERTIFICATION
+FormLast5Gap,predictor,Difference in mean3/1/0points over earlier five eligible matches; not win rate,WORKING_REPORT_ALIGNED; NOT FULL_SOURCE_CERTIFICATION
+h2h_goal_diff_hist,predictor,Mean earlier H2H goal difference from Team A perspective over20years; zero when no history; no shrinkage,WORKING_REPORT_ALIGNED; NOT FULL_SOURCE_CERTIFICATION
+manager_wc_exp_diff,predictor,Pre2026senior men’s World Cup finals matches managed; coach identity snapshot10June2026; fixed Team A minus Team B,WORKING_REPORT_ALIGNED; NOT FULL_SOURCE_CERTIFICATION
+travel_distance_diff_km,predictor,Venue-to-venue great-circle km difference; first appearance zero in primary model; geographic proxy,WORKING_REPORT_ALIGNED; NOT FULL_SOURCE_CERTIFICATION
+Previous_WC_Experience_Share_Gap,predictor,Prior World Cup registered-squad experience-share difference from supplied working roster; pre-cutoff membership not certified,WORKING_REPORT_ALIGNED; NOT FULL_SOURCE_CERTIFICATION
+Stage_Pressure_Diff,predictor,"Team A minus Team B pressure=min(3,max(0,4-priorgroup points)/remaininggroup matches); currentmatch includedinremaining; knockout3each",WORKING_REPORT_ALIGNED; NOT FULL_SOURCE_CERTIFICATION
