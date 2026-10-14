@@ -17,14 +17,6 @@ Run order
 
 Packages: pandas, numpy, statsmodels, scipy, matplotlib, scikit-learn, geopy
 
-Data sources
-  data/fixtures.csv: FBref World Cup 2026 schedule
-  Base camps: FIFA media release, 25 May 2026, "FIFA World Cup 2026 Team Base Camp Training Sites
-    footprint finalised"
-  Coordinates: OpenStreetMap contributors, via the Nominatim geocoder, accessed [date]
-  model21_master.csv, model22_master.csv, qualification_match_adjustment_audit.csv:
-    provided by teammates, not changed
-
 Notes
   [A3 in the models uses first match = 0. a3_sensitivity.py shows that using the base camp
    instead changes cross-validated RMSE by under 0.01.]
